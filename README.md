@@ -14,7 +14,7 @@
 
 Чтобы запустить эту систему распознавания дорожных знаков, убедитесь, что на вашей машине установлен Python 3.6 или новее. Клонируйте этот репозиторий, а затем установите необходимые зависимости:
 
-``bash
+```bash
 git clone https://github.com/your-repository/road-sign-recognition.git
 ```
 
@@ -22,7 +22,7 @@ git clone https://github.com/your-repository/road-sign-recognition.git
 
 Запустите приложение, выполнив следующую команду:
 
-``bash
+```bash
 python finale.py
 ```
 
