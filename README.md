@@ -1,51 +1,41 @@
-# Road Sign Recognition System (YOLOv8)
+# Система распознавания дорожных знаков (YOLOv8)
 
-Welcome to the GitHub repository of our innovative Road Sign Recognition System utilizing the power of YOLOv8. This application is designed to accurately detect and recognize various road signs, assisting drivers in navigating more safely and effectively. The system employs the Ultralytics YOLO model alongside a Deep SORT tracker to ensure real-time detection and tracking of road signs.
+Добро пожаловать в GitHub-репозиторий моей системы распознавания дорожных знаков, использующей возможности YOLOv8. Это приложение предназначено для точного обнаружения и распознавания различных дорожных знаков, помогая водителям более безопасно и эффективно перемещаться по дорогам. Система использует модель Ultralytics YOLO вместе с трекером DeepSort для обеспечения обнаружения и отслеживания дорожных знаков в режиме реального времени.
 
-## Features
+## Особенности
 
-- **Speed Limit and Traffic Sign Detection:** Identifies and interprets a wide range of traffic signs including speed limits, no entry, pedestrian crossings, and more.
-- **Real-Time Video Processing:** Capable of processing live video streams to detect and classify road signs instantaneously.
-- **Image Processing Capabilities:** Analyzes static images for road sign detection and classification.
-- **Voice Notifications:** Utilizes a text-to-speech engine to audibly announce detected road signs, enhancing driver awareness.
-- **Custom User Interface:** Provides a user-friendly GUI built with PyQt5 for easy interaction with the application.
+- **Определение дорожных знаков:** Определяет и интерпретирует широкий спектр дорожных знаков.
+- **Обработка видео в реальном времени:** Возможность обработки видеопотоков в реальном времени для мгновенного обнаружения и классификации дорожных знаков.
+- **Возможности обработки изображений:** Анализ статичных изображений для обнаружения и классификации дорожных знаков.
+- **Голосовые уведомления:** Использует механизм преобразования текста в речь для звукового оповещения об обнаруженных дорожных знаках, повышая осведомленность водителей.
+- **Настраиваемый пользовательский интерфейс:** Предоставляет удобный графический интерфейс, построенный на PyQt5, для легкого взаимодействия с приложением.
 
-## Installation
+## Установка
 
-To run this road sign recognition system, ensure you have Python 3.6 or newer installed on your machine. Clone this repository, and then install the required dependencies:
+Чтобы запустить эту систему распознавания дорожных знаков, убедитесь, что на вашей машине установлен Python 3.6 или новее. Клонируйте этот репозиторий, а затем установите необходимые зависимости:
 
-```bash
+``bash
 git clone https://github.com/your-repository/road-sign-recognition.git
-cd road-sign-recognition
-pip install -r requirements.txt
 ```
 
-## Usage
+## Использование
 
-Run the application by executing the following command:
+Запустите приложение, выполнив следующую команду:
 
-```bash
-python road_sign_recognition.py
+``bash
+python finale.py
 ```
 
-Upon launching, you will be greeted with a simple and intuitive interface. You can choose to process a static image, a video file, or real-time video feed from your webcam.
+После запуска вас встретит простой и интуитивно понятный интерфейс. Вы можете выбрать обработку статического изображения, видеофайла или видео в реальном времени с вашей веб-камеры.
 
-## Technologies
+## Технологии
 
-- **OpenCV:** For image and video processing.
-- **YOLOv8:** For state-of-the-art object detection.
-- **PyQt5:** For building the graphical user interface.
-- **Pyttsx3:** For enabling text-to-speech capabilities.
-- **Deep SORT:** For robust object tracking.
+- **OpenCV:** Для обработки изображений и видео.
+- **YOLOv8:** Для современного обнаружения объектов.
+- **PyQt5:** Для создания графического интерфейса пользователя.
+- **Pyttsx3:** Для обеспечения возможности преобразования текста в речь.
+- **DeepSort:** Для надежного отслеживания объектов.
 
-## Configuration and Customization
+## Конфигурация и настройка
 
-The system is highly configurable with several parameters such as confidence thresholds, detection box thickness, and label text sizes adjustable according to user preference. It is designed for flexibility and can be adapted to various types of road signs by modifying the `CLASS_LIST` within the `YOLOv8` class.
-
-## Contributing
-
-Contributions to this project are welcome! Whether it's improving the detection algorithms, enhancing the user interface, or providing translations for non-English speakers, we appreciate your input.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+Система обладает широкими возможностями настройки: некоторые параметры, такие как порог уверенности, толщина поля обнаружения и размер текста метки, настраиваются в соответствии с предпочтениями пользователя. Система разработана с учетом гибкости и может быть адаптирована к различным типам дорожных знаков путем изменения `CLASS_LIST` и пути к модели в классе `YOLOv8`.
